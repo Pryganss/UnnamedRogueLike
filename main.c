@@ -135,7 +135,7 @@ Room * createRoom(int y, int x, int height, int width)
   srand((unsigned) rand());
   
   // Right Door
-  newRoom->doors[3].y = y + (rand() % (height)) + 1;
+  newRoom->doors[3].y = y + (rand() % (height - 1)) + 1;
   newRoom->doors[3].x = x + width;  
 
   drawRoom(newRoom);
